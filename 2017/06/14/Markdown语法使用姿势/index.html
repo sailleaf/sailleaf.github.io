@@ -153,16 +153,6 @@
 
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9566893ed646423facabdc69c865ef2e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
 
 
 
@@ -652,7 +642,7 @@ Hello [Markdown](http://wowubuntu.com/markdown/)!
 <h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p>使用 &lt;&gt; 包括的 URL 或邮箱地址会被自动转换为超链接：</p>
 <pre><code>&lt;https://yeeyy.me&gt;  
 &lt;fall@yeeyy.me&gt;
-</code></pre><p><a href="https://yeeyy.me">https://yeeyy.me</a><br><a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#102;&#x61;&#x6c;&#108;&#x40;&#121;&#x65;&#x65;&#x79;&#x79;&#46;&#x6d;&#x65;">&#102;&#x61;&#x6c;&#108;&#x40;&#121;&#x65;&#x65;&#x79;&#x79;&#46;&#x6d;&#x65;</a></p>
+</code></pre><p><a href="https://yeeyy.me">https://yeeyy.me</a><br><a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x66;&#97;&#x6c;&#108;&#64;&#x79;&#x65;&#x65;&#x79;&#x79;&#x2e;&#x6d;&#101;">&#x66;&#97;&#x6c;&#108;&#64;&#x79;&#x65;&#x65;&#x79;&#x79;&#x2e;&#x6d;&#101;</a></p>
 <p>该方式适合行内较短的链接，会使用 URL 作为链接文字。邮箱地址会自动编码，以逃避抓取机器人。</p>
 <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>插入图片的语法和插入超链接的语法基本一致，只是在最前面多一个 !，也分为行内式和参考式两种。</p>
 <h3 id="行内式-1"><a href="#行内式-1" class="headerlink" title="行内式"></a>行内式</h3><pre><code>![Show](http://orh8ki6p9.bkt.clouddn.com/head_show/ava.jpg &quot;Show&quot;)
@@ -744,6 +734,27 @@ Hello [Markdown](http://wowubuntu.com/markdown/)!
     <div>
       
         
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>我知道你很正常，但人总有想不开的时候吧！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/Yee.YY_Wechat_Reward.png" alt="叶歪歪 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/Yee.YY_Alipay_Reward.png" alt="叶歪歪 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
 
       
     </div>
@@ -751,6 +762,21 @@ Hello [Markdown](http://wowubuntu.com/markdown/)!
     <div>
       
         
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      叶歪歪
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://yeeyy.me/2017/06/14/Markdown语法使用姿势/" title="Markdown语法使用姿势">https://yeeyy.me/2017/06/14/Markdown语法使用姿势/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
 
       
     </div>
@@ -1575,26 +1601,6 @@ Hello [Markdown](http://wowubuntu.com/markdown/)!
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
