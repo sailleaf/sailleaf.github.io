@@ -104,7 +104,7 @@
 <meta property="og:image" content="http://orh8ki6p9.bkt.clouddn.com/head_show/avatar_s.png">
 <meta property="og:image" content="http://orh8ki6p9.bkt.clouddn.com/head_show/avatar_s.png">
 <meta property="og:image" content="http://orh8ki6p9.bkt.clouddn.com/%E4%B8%80%E5%8F%B6%E6%89%81%E8%88%9F.jpg">
-<meta property="og:updated_time" content="2017-06-16T14:23:00.772Z">
+<meta property="og:updated_time" content="2017-06-16T14:34:21.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown语法使用姿势">
 <meta name="twitter:description" content="此文目的是Markdown手册，初见可以是路过或学习，也可以因查阅而再见。其主要内容是介绍Markdown语法特性。通过时常写作、练习，你完全可以写出一篇形意具佳的Markdown排版的文章，也希望有朝一日能能真正对说此文再见。">
@@ -425,7 +425,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  4,026
+                  4,024
                 </span>
               
 
@@ -534,7 +534,7 @@
 <p> <strong>显示结果</strong></p>
 <div class="note default"><p>来来来加粗： <strong>来来来</strong> ，Come Come Come加粗： <strong>Come Come Come</strong></p>
 </div>
-<p>③ 用来包括文本的 <code>*</code> 或 <code>_</code> 包括的内侧边界建议不要留空白，否则会因不同的Markdown实现表现异常：</p>
+<p>③ 用来包括文本的 <code>*</code> 或 <code>_</code> 的内侧边界建议不要留空白，否则会因不同的Markdown实现表现异常：</p>
 <p> <strong>Markdown语法</strong> </p>
  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">喜喜： <span class="strong">** 喜喜**</span> ； he he： <span class="strong">__ he he __</span></div></pre></td></tr></table></figure>
 <p> <strong>Hexo结果</strong></p>
@@ -547,7 +547,7 @@
 <div class="note default"><p>显示一个 * 号，需要转义<br>显示一个下划线 _，不需要转义<br>显示成对星号： **，需要转义<br>显示成对下划线： __，需要转义  </p>
 </div>
 <p>⑤ 给文本加入斜体或加粗的效果中，<code>*</code>、<code>**</code>、<code>_</code> 、 <code>__</code> 都必须成对使用。</p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表使用星号 <code>*</code> 、加号 <code>+</code> 、减号 <code>-</code> 作为列表的项目标记，用法如下：</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>无序列表使用星号 <code>*</code> 、加号 <code>+</code> 、减号 <code>-</code> 作为列表项Item的标记，用法如下：</p>
 <p> <strong>Markdown语法</strong> </p>
  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">* </span>该列表处的Item使用 <span class="code">`*`</span> 作为标记  </div><div class="line"><span class="bullet">+ </span>该列表处的Item使用 <span class="code">`+`</span> 作为标记  </div><div class="line"><span class="bullet">- </span>该列表处的Item使用 <span class="code">`-`</span> 作为标记</div></pre></td></tr></table></figure>
 <p> <strong>显示结果</strong></p>
@@ -648,9 +648,9 @@
 <div class="note default"><p><a href="./uploads/avatar.png">avatar.png</a></p>
 </div>
 <h3 id="参考式"><a href="#参考式" class="headerlink" title="参考式"></a>参考式</h3><p>参考式链接的写法相当于行内式拆分成两部分，并通过一个识别符来连接两部分。参考式能尽量保持文章结构的简单，也方便统一管理 url 。</p>
-<p>首先，定义链接标识符，格式为：<code>[链接文本][标识符]</code> ；<br>然后，定义链接内容，格式为：<code>[识别符]: url &#39;title&#39;</code> 。</p>
+<p>首先，定义链接标识符，格式为：<code>[链接文本][标识符]</code> ；<br>然后，定义链接内容，格式为：<code>[标识符]: url &#39;title&#39;</code> 。</p>
  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[<span class="string">Wikipedia</span>][<span class="symbol">wikipedia_id</span>]</div><div class="line">[<span class="symbol">wikipedia_id</span>]: <span class="link">https://www.wikipedia.org/ 'Wikipedia'</span></div></pre></td></tr></table></figure>
-<p>另一种写法是省略<strong>识别符</strong>，使用链接文本作为<strong>识别符</strong>：</p>
+<p>另一种写法是省略<strong>标识符</strong>，使用链接文本作为<strong>标识符</strong>：</p>
  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[<span class="string">Wikipedia</span>][<span class="symbol"></span>]</div><div class="line">[<span class="symbol">Wikipedia</span>]: <span class="link">https://www.wikipedia.org 'Wikipedia'</span></div></pre></td></tr></table></figure>
 <p> <strong>显示结果</strong></p>
 <div class="note default"><p><a href="https://www.wikipedia.org" title="Wikipedia" target="_blank" rel="external">Wikipedia</a></p>
@@ -660,14 +660,12 @@
 <blockquote>
 <p>其中，<code>title</code> 也可以使用<code>()</code> 包括（考虑到兼容性，建议使用引号）；<br>标识符可以是字母、数字、空白或标点符号，<strong>不区分大小写</strong>；<br>链接内容的定义可以放在同一个文件的<strong>任意位置</strong>；</p>
 </blockquote>
-<p>参考式相对于行内式有一个明显的优点，就是可以在多个不同的位置引用同一个 url。</p>
+<p>参考式相对于行内式有一个明显的优点，就是可以在多个不同的位置引用同一个 url 。</p>
 <h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p>使用 <code>&lt;&gt;</code> 包括的 <code>url</code> 或<code>E-mail</code>地址会被自动转换为超链接：</p>
 <p> <strong>Markdown语法</strong><br> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;https://yeeyy.me&gt;  </div><div class="line">&lt;fall@yeeyy.me&gt;</div></pre></td></tr></table></figure></p>
-<p> <strong>显示结果</strong><br><div class="note default"><p><a href="https://yeeyy.me">https://yeeyy.me</a><br><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x66;&#x61;&#x6c;&#x6c;&#64;&#121;&#x65;&#101;&#x79;&#121;&#46;&#109;&#x65;">&#x66;&#x61;&#x6c;&#x6c;&#64;&#121;&#x65;&#101;&#x79;&#121;&#46;&#109;&#x65;</a></p>
+<p> <strong>显示结果</strong><br><div class="note default"><p><a href="https://yeeyy.me">https://yeeyy.me</a><br><a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#x66;&#97;&#108;&#x6c;&#x40;&#121;&#101;&#101;&#x79;&#121;&#x2e;&#x6d;&#x65;">&#x66;&#97;&#108;&#x6c;&#x40;&#121;&#101;&#101;&#x79;&#121;&#x2e;&#x6d;&#x65;</a></p>
 </div></p>
-<blockquote>
 <p>该方式适合行内较短的链接，使用 <code>url</code> 作为链接文字。 <code>E-mail</code> 会自动编码，以逃避抓取机器人。另外注意的是，这种链接方式在Hexo环境上不会在新的标签页打开链接，而是在当前页转到新链接。 </p>
-</blockquote>
 <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>插入图片的语法和插入超链接的语法基本一致，只是在最前面多一个 <code>!</code> ，也分为行内式和参考式两种。</p>
 <h3 id="行内式-1"><a href="#行内式-1" class="headerlink" title="行内式"></a>行内式</h3><p> <strong>Markdown语法</strong><br> <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![<span class="string">avatar</span>](<span class="link">http://orh8ki6p9.bkt.clouddn.com/head_show/avatar_s.png "avatar"</span>)</div></pre></td></tr></table></figure></p>
 <p> <strong>显示结果</strong><br><div class="note default"><p><img src="http://orh8ki6p9.bkt.clouddn.com/head_show/avatar_s.png" alt="avatar" title="avatar"></p>
